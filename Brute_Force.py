@@ -9,7 +9,7 @@ if __name__ == '__main__':
     success = False
     number_char = '0123456789'
     # Concatenating alphabets(lower and upper) and numbers. Also can add symbols more accuracy
-    all_char = ascii_letters + number_char
+    all_char = number_char + ascii_letters
     char_list = list(all_char)
 
     while not success:

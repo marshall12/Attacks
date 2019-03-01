@@ -16,9 +16,4 @@ if __name__ == '__main__':
                 if success:
                     print(f'Username id {trial_username}\nPassword is {trial_password}')
                     sys.exit()
-
-
-
-
-
-
+                    
